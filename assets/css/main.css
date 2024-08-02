@@ -1,0 +1,11 @@
+:root {
+    --small-font: 0.8rem;
+    --medium-font: 1.5rem;
+    --big-font: 2.4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
