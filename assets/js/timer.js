@@ -3,9 +3,7 @@ function timer() {
     const time = document.querySelector("#time");
     let mins = document.querySelector(".minutes");
     let secs = document.querySelector(".seconds");
-    // const startBtn = document.querySelector(".start-btn");
-    // const stopBtn = document.querySelector(".stop-btn");
-    // const resetBtn = document.querySelector(".reset-btn");
+    const runBtn = document.querySelector(".run-btn");
     
     const standardTime = minutesToSec(25);
     let seconds = standardTime;
@@ -17,11 +15,13 @@ function timer() {
 
         if(el.classList.contains("start-btn")) {
             start();
+            toggleBtn(el, "start-btn", "stop-btn", "Stop");
             return;
         }
 
         if(el.classList.contains("stop-btn")) {
             stop();
+            toggleBtn(el, "stop-btn", "start-btn", "Start");
             return;
         }
 
@@ -57,26 +57,30 @@ function timer() {
 
     function reset(type) {
         clearInterval(runTime);
+        toggleBtn(runBtn, "stop-btn", "start-btn", "Start");
 
         switch (type) {
             case "shortBreak":
-                mins.innerText = "05";
-                secs.innerText = "00";
+                setTimeText("05", "00");
                 seconds = minutesToSec(5);
                 break;
 
             case "longBreak":
-                mins.innerText = "15";
-                secs.innerText = "00";
+                setTimeText("15", "00");
                 seconds = minutesToSec(15);
                 break;
             
             default:
-                mins.innerText = "25";
-                secs.innerText = "00";
+                setTimeText("25", "00");
                 seconds = standardTime;
                 break;
         }
+    }
+
+    function toggleBtn(el, oldClass, newClass, inText) {
+        el.classList.add(newClass);
+        el.classList.remove(oldClass);
+        el.innerText = inText;
     }
 
     function minutesToSec(minutes) {
@@ -86,6 +90,11 @@ function timer() {
     function getTimeFromSec(sec) {
         const date = new Date(sec * 1000);
         return date;
+    }
+
+    function setTimeText(minutes, seconds) {
+        mins.innerText = minutes;
+        secs.innerText = seconds;
     }
 
     function displayTime(seconds) {
