@@ -12,21 +12,46 @@
     </header>
 
     <main>
-        <div id="timer-div">
-            <menu  id="timer-options">
-                <button class="work-btn">Work</button>
-                <button class="short-btn">Short Break</button>
-                <button class="long-btn">Long Break</button>
-            </menu>
-            <p id="time">
-                <span class="minutes">25</span>:<span class="seconds">00</span>
-            </p>
-            <div class="timer-btn-container">
-                <button class="run-btn start-btn">Start</button>
+        <article id="timer">
+            <div class="timer-div">
+                <menu class="timer-options">
+                    <button class="work-btn">Work</button>
+                    <button class="short-btn">Short Break</button>
+                    <button class="long-btn">Long Break</button>
+                </menu>
+                <p class="time">
+                    <span class="minutes">25</span>:<span class="seconds">00</span>
+                </p>
+                <div class="timer-btn-container">
+                    <button class="run-btn start-btn">Start</button>
+                </div>
             </div>
-        </div>
+        </article>
+
+
+        <article id="to-do-list">   
+            <div class="to-do-div">
+                <h2>My Tasks</h2>
+                <button class="add-task-btn">Add task +</button>
+            </div>
+
+            <div class="my-tasks">
+                <menu class="task-list">
+
+                </menu>
+            </div>
+
+            <div class="task-modal">
+                <div class="modal-content">
+                    <input type="text" class="task-input">
+                    <button class="add-btn">Add</button>
+                </div>
+            </div>
+        </article>
     </main>
 
     <script src="assets/js/timer.js"></script>
+    <script src="assets/js/toDoList.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

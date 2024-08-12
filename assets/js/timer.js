@@ -1,6 +1,5 @@
 function timer() {
     // Variables
-    const time = document.querySelector("#time");
     let mins = document.querySelector(".minutes");
     let secs = document.querySelector(".seconds");
     const runBtn = document.querySelector(".run-btn");
@@ -113,5 +112,3 @@ function timer() {
         }
     }
 }
-
-timer()
