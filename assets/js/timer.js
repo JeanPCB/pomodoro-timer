@@ -38,7 +38,7 @@ function timer() {
             reset("longBreak");
             return;
         }
-    })
+    });
 
     // Functions
     function start() {

@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workodoro</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
-<body>
+<body class="d-flex">
     <header>
-        <h1>WORKODORO</h1>
+        <h1 class="fs-big">WORKODORO</h1>
     </header>
 
     <main>
         <article id="timer">
             <div class="timer-div">
                 <menu class="timer-menu">
-                    <li class="work-btn c-pointer">Work</button>
-                    <li class="short-btn c-pointer">Short Break</button>
-                    <li class="long-btn c-pointer">Long Break</button>
+                    <li class="work-btn cs-pointer fs-medium">Work</button>
+                    <li class="short-btn cs-pointer fs-medium">Short Break</button>
+                    <li class="long-btn cs-pointer fs-medium">Long Break</button>
                 </menu>
 
-                <div class="time-div t-center">
-                    <div class="time">
+                <div class="time-div txt-center">
+                    <div class="time fs-biggest">
                         <div class="minutes-div">
                             <span class="minutes">25</span>
                         </div>
@@ -35,7 +35,9 @@
                         </div>
                     </div>
                     <div class="timer-btn-container">
-                        <button class="run-btn start-btn c-pointer">START</button>
+                        <div class="run-btn-wrap">
+                            <button class="run-btn start-btn cs-pointer fs-medium">START</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -44,27 +46,32 @@
 
         <article id="to-do-list">   
             <div class="to-do-div">
-                <h2>My Tasks</h2>
-                <button class="add-task-btn">Add task +</button>
+                <h2 class="txt-center fs-medium">My Tasks</h2>
+                <button class="add-task-btn fs-smallest cs-pointer">Add task +</button>
             </div>
 
             <div class="my-tasks">
-                <menu class="task-list">
+                <menu class="task-list fs-small">
 
                 </menu>
             </div>
 
-            <div class="task-modal">
-                <div class="modal-content">
-                    <input type="text" class="task-input">
-                    <button class="add-btn">Add</button>
+            <div class="task-modal-backdrop d-none">
+                <div class="task-modal-content">
+                    <button class="close-btn fs-medium cs-pointer">X</button>
+                    <p class="fs-medium">Describe your task:</p>
+                    <div>
+                        <input type="text" class="task-input fs-smallest">
+                        <button class="add-btn cs-pointer fs-smallest"><i class="fa-solid fa-plus"></i></button>
+                    </div>
                 </div>
             </div>
         </article>
     </main>
     
-    <script src="assets/js/timer.js"></script>
-    <script src="assets/js/toDoList.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/timer.js"></script>
+    <script src="./assets/js/toDoList.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/f0f270f822.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -14,10 +14,10 @@ function toDoList() {
         }
 
         if(el.classList.contains("task-item")) {
-            el.remove();
+            el.classList.toggle("task-done");
             saveTasks();
         }
-    })
+    });
 
     runFunctionEnter(taskInput, addTask);
 
@@ -37,8 +37,10 @@ function toDoList() {
         const tasks = [];
 
         taskItems.forEach(item => {
-            let itemText = item.innerText;
-            tasks.push(itemText);
+            if(!item.classList.contains("task-done")) {
+                let itemText = item.innerText;
+                tasks.push(itemText);
+            }
         });
 
         const tasksJson = JSON.stringify(tasks);

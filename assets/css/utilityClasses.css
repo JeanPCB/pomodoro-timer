@@ -1,0 +1,41 @@
+:root {
+    /* Fonts */
+    --smallest-font: calc(0.6rem + 0.5vw);
+    --small-font: calc(0.8rem + 0.5vw);
+    --medium-font: calc(1rem + 0.5vw);
+    --big-font: calc(2.4rem + 1vw);
+    --biggest-font: calc(4.6rem + 2vw);
+}
+
+/* Utility Classes */
+.fs-smallest {
+    font-size: var(--smallest-font);
+}
+
+.fs-small {
+    font-size: var(--small-font);
+}
+
+.fs-medium {
+    font-size: var(--medium-font);
+}
+
+.fs-big {
+    font-size: var(--big-font);
+}
+
+.fs-biggest {
+    font-size: var(--biggest-font);
+}
+
+.cs-pointer {
+    cursor: pointer;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.d-none {
+    display: none !important;
+}

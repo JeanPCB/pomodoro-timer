@@ -1,20 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url("./utilityClasses.css");
 
 :root {
     /* Colors */
     --primary-color: #F9DC94;
     --secondary-color: #F0E0A5;
-
-    /* Fonts */
-    --small-font: calc(0.8rem + 1vw);
-    --medium-font: calc(1rem + 0.5vw);
-    --big-font: calc(2.4rem + 1vw);
-    --biggest-font: calc(4.6rem + 2vw);
+    --tertiary-color: #ffe791;
+    --secondary-color-dark: #e4d39b;
 
     /* Spaces */
     --small-gap: calc(1rem + 0.5vh);
     --medium-gap: calc(1.2rem + 1vh);
-    --big-gap: calc(3rem + 2vh);
+    --big-gap: calc(2rem + 2vh);
+    --biggest-gap: calc(3rem + 2vh);
 }
 
 * {
@@ -33,31 +31,34 @@ body {
 }
 
 h1 {
-    margin-top: var(--big-gap);
+    margin-top: var(--biggest-gap);
     margin-bottom: var(--medium-gap);
-    font-size: var(--big-font);
     font-weight: 700;
     text-decoration: underline;
     text-align: center;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     min-width: 30%;
+    gap: var(--big-gap);
+    margin-bottom: var(--biggest-gap);
 }
 
-/* Utility Classes */
-.c-pointer {
-    cursor: pointer;
+button, li, input {
+    border: none;
+    background: none;
 }
 
-.t-center {
-    text-align: center;
+button:hover {
+    background: none;
 }
 
 /* Custom Classes */
-.timer-menu, .time-div, .run-btn {
-    border: rgba(0, 0, 0, 0.5) 2px solid;
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3) ;
+.timer-menu, .time-div, .to-do-div h2, .task-modal-content {
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
     background-color: var(--secondary-color);
 }
 
@@ -74,9 +75,6 @@ main {
 }
 
 .timer-menu li {
-    background: none;
-    border: none;
-    font-size: var(--medium-font);
     list-style: none;
     padding: 5px 15px;
 }
@@ -88,24 +86,156 @@ main {
 .time {
     display: flex;
     justify-content: center;
-    font-size: var(--biggest-font);
     line-height: 1;
-    margin: 15px;
+    margin: 30px;
 }
 
 .minutes-div, .seconds-div {
-    width: 35%;
+    width: 40%;
 }
 
 .timer-btn-container {
-    margin: 30px 15px 15px 25px;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    margin-bottom: 25px;
+}
+
+.run-btn-wrap {
+    min-width: 30%;
+    border: 3px solid #000;
+    border-radius: 5px;
 }
 
 .run-btn {
-    padding: 5px 15px;
-    font-size: var(--medium-font);
+    width: 100%;
+    padding: 5px 20px;
+    position: relative;
+    bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 10px 0px var(--secondary-color-dark);
+    background-color: var(--primary-color);
 }
 
 .run-btn:hover {
     background-color: var(--primary-color);
+}
+
+.run-btn:focus {
+    transform: translate(0px, 10px);
+    box-shadow: none;
+}
+
+#to-do-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--small-gap);
+}
+
+.to-do-div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--small-gap);
+}
+
+.to-do-div h2 {
+    padding: 5px;
+}
+
+.add-task-btn {
+    color: rgba(0, 0, 0, 0.5);
+    border: 3px dashed rgba(0, 0, 0, 0.3);
+    background-color: var(--primary-color);
+}
+
+.add-task-btn:hover {
+    color: #000;
+    border: 3px dashed rgba(0, 0, 0, 0.7);
+}
+
+.task-list li {
+    list-style-position: inside;
+    width: fit-content;
+    margin: 5px 0px;
+}
+
+.task-list li:hover {
+    cursor: pointer;
+}
+
+.task-done {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+
+.task-modal-backdrop {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.task-modal-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 30%;
+    padding: var(--medium-gap);
+}
+
+.task-modal-content p {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.task-modal-content div {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    margin-bottom: 15px;
+}
+
+.task-input {
+    width: 85%;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.task-input, .add-btn {
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.task-input:hover, 
+.task-input:focus, 
+.add-btn:hover,
+.add-btn:focus {
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.8);
+    outline: none;
+}
+
+.add-btn {
+    width: 12%;
+    background-color: var(--primary-color) !important;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    color: rgb(201, 37, 37);
+}
+
+.close-btn:hover {
+    color: rgb(255, 0, 0);
 }
