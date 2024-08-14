@@ -3,27 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pomodoro Timer</title>
+    <title>Workodoro</title>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
     <header>
-        <h1>Pomodoro</h1>
+        <h1>WORKODORO</h1>
     </header>
 
     <main>
         <article id="timer">
             <div class="timer-div">
-                <menu class="timer-options">
-                    <button class="work-btn">Work</button>
-                    <button class="short-btn">Short Break</button>
-                    <button class="long-btn">Long Break</button>
+                <menu class="timer-menu">
+                    <li class="work-btn c-pointer">Work</button>
+                    <li class="short-btn c-pointer">Short Break</button>
+                    <li class="long-btn c-pointer">Long Break</button>
                 </menu>
-                <p class="time">
-                    <span class="minutes">25</span>:<span class="seconds">00</span>
-                </p>
-                <div class="timer-btn-container">
-                    <button class="run-btn start-btn">Start</button>
+
+                <div class="time-div t-center">
+                    <div class="time">
+                        <div class="minutes-div">
+                            <span class="minutes">25</span>
+                        </div>
+
+                        <div class="dots-div">
+                            <span class="dots">:</span>
+                        </div>
+
+                        <div class="seconds-div">
+                            <span class="seconds">00</span>
+                        </div>
+                    </div>
+                    <div class="timer-btn-container">
+                        <button class="run-btn start-btn c-pointer">START</button>
+                    </div>
                 </div>
             </div>
         </article>
@@ -49,7 +62,7 @@
             </div>
         </article>
     </main>
-
+    
     <script src="assets/js/timer.js"></script>
     <script src="assets/js/toDoList.js"></script>
     <script src="assets/js/main.js"></script>

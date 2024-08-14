@@ -14,13 +14,13 @@ function timer() {
 
         if(el.classList.contains("start-btn")) {
             start();
-            toggleBtn(el, "start-btn", "stop-btn", "Stop");
+            toggleBtn(el, "start-btn", "stop-btn", "STOP");
             return;
         }
 
         if(el.classList.contains("stop-btn")) {
             stop();
-            toggleBtn(el, "stop-btn", "start-btn", "Start");
+            toggleBtn(el, "stop-btn", "start-btn", "START");
             return;
         }
 
@@ -56,7 +56,7 @@ function timer() {
 
     function reset(type) {
         clearInterval(runTime);
-        toggleBtn(runBtn, "stop-btn", "start-btn", "Start");
+        toggleBtn(runBtn, "stop-btn", "start-btn", "START");
 
         switch (type) {
             case "shortBreak":
