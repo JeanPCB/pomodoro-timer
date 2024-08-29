@@ -19,7 +19,7 @@
 
   <tr>
     <td><img alt="img-4" src="./assets/img/img4.jpg" /></td>
-    <td>Add tasks, don't be a lazy ass</td>
+    <td>Add tasks, don't be a lazy ass. Just click on <strong>"add task"</strong> button and this screen will pop-up</td>
   </tr>
   
   <tr>
