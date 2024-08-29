@@ -3,8 +3,8 @@
 
 <table>
   <tr>
-    <td width="50%">Starting the timer</th>
-    <td>image 1</th>
+    <td width="50%">Just start it please</th>
+    <td><img alt="img-1" src="" /></th>
   </tr>
   
   <tr>
