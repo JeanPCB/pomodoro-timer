@@ -23,12 +23,7 @@
   </tr>
   
   <tr>
-    <td>You can remove done tasks, Wooow!!!</th>
     <td>image 5</th>
-  </tr>
-  
-  <tr>
-    <td>image 6</th>
-    <td>This time i will not judge you for don't knowing how. Click on the task that you added and see it being struck through.</td>
+    <td>This time i will not judge you for don't knowing how. Click on the task that you added and see it being struck through and removed after refresh page.</td>
   </tr>
 </table>
