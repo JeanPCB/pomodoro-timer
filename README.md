@@ -27,3 +27,14 @@
     <td><img alt="img-5" src="./assets/img/img5.jpg" /></td>
   </tr>
 </table>
+
+*Nothing's new, no?*
+
+## Technologies
+- A little of Java
+- And a little of Script
+
+## The "why" of it?
+*Boredom, just kidding :)*
+
+I still a completely newbie in Javascript, so let me cook. I need to develop the basics projects to learn more about the syntax of the language and about programming as well, i'm just another dumb programmer that get excited when seeing my little programs coming to life, accept it.
