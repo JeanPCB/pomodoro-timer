@@ -239,3 +239,9 @@ button:hover {
 .close-btn:hover {
     color: rgb(255, 0, 0);
 }
+
+@media screen and (max-width: 1024px) {
+    button:hover, a:hover, li:hover {
+        cursor: none;
+    }
+}
