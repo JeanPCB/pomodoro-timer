@@ -241,6 +241,20 @@ button:hover {
 }
 
 @media screen and (max-width: 1024px) {
+    button, a, li {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    button:focus, a:focus, li:focus {
+        outline: none !important;
+    }
+
     button:hover, a:hover, li:hover {
         cursor: none;
     }
