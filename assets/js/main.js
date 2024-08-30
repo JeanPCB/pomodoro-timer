@@ -1,10 +1,12 @@
 function main() {
     const runBtn = document.querySelector(".run-btn");
-    const clickAudio = new Audio("../audio/mouse-click-sound-233951.mp3");
+    const clickAudio = document.querySelector("#click-audio");
     const taskModal = document.querySelector(".task-modal-backdrop");
     const taskInput = document.querySelector(".task-input");
 
-    // Start/Stop button sound
+    // Run button sound
+    clickAudio.volume = 0.3;
+
     runBtn.addEventListener("click", () => {
         clickAudio.play();
     });
