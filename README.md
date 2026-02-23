@@ -1,40 +1,40 @@
-# Workodoro
-*just another pomodoro...*
+# Workodoro  
+*Uma aplicação simples baseada na técnica Pomodoro.*
 
 <table>
   <tr>
-    <td width="350">Just start it please</td>
+    <td width="350">Inicie o cronômetro para começar a utilizar a aplicação.</td>
     <td width="350"><img alt="img-1" src="./assets/img/img1.jpg" /></td>
   </tr>
   
   <tr>
     <td><img alt="img-2" src="./assets/img/img2.jpg" /></td>
-    <td>Let's test our time modes, genius</td>
+    <td>Experimente os diferentes modos de tempo disponíveis.</td>
   </tr>
 
   <tr>
-    <td>Probably you will not figure it out, but you can stop the timer</td>
+    <td>O cronômetro pode ser pausado ou interrompido a qualquer momento.</td>
     <td><img alt="img-3" src="./assets/img/img3.jpg" /></td>
   </tr>
 
   <tr>
     <td><img alt="img-4" src="./assets/img/img4.jpg" /></td>
-    <td>Add tasks, don't be a lazy ass. Just click on <strong>"add task"</strong> button and this window will pop-up</td>
+    <td>É possível adicionar tarefas clicando no botão <strong>"Adicionar tarefa"</strong>, que abrirá uma janela para inserção.</td>
   </tr>
   
   <tr>
-    <td>This time i will not judge you for don't knowing how. Click on the task that you added and see it being struck through and removed after refresh page.</td>
+    <td>Ao clicar em uma tarefa concluída, ela será marcada e removida após a atualização da página.</td>
     <td><img alt="img-5" src="./assets/img/img5.jpg" /></td>
   </tr>
 </table>
 
-*Nothing's new, no?*
+## Tecnologias
+- JavaScript
+- HTML
+- CSS
 
-## Technologies
-- A little of Java
-- And a little of Script
+## Objetivo do Projeto
 
-## The "why" of it?
-*Boredom, just kidding :)*
+Este projeto foi desenvolvido com o objetivo de praticar conceitos fundamentais de JavaScript e lógica de programação.  
 
-I still a completely newbie in Javascript, so let me cook. I need to develop the basics projects to learn more about the syntax of the language and about programming as well, i'm just another dumb programmer that get excited when seeing my little programs coming to life, accept it.
+Como iniciante na linguagem, busquei consolidar conhecimentos básicos por meio da construção de projetos práticos, reforçando a compreensão da sintaxe, manipulação de eventos, controle de tempo e gerenciamento de estado no navegador.
